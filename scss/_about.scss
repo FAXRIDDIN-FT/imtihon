@@ -37,6 +37,15 @@
         align-items: center;
         margin-top: 36px;
         gap: 100px;
+        p{
+            color: black;
+            font-weight: 700;
+            font-size: 25px;
+        }
+        span{
+            color: #8F95A5;
+            font-weight: 600;
+        }
     }
 
     &__item {
@@ -135,7 +144,8 @@
         &__footer{
             display: flex;
             justify-content: center;
-            gap: 40px;
+            flex-direction: column;
+            gap: 60px;
         }
     }
 }
