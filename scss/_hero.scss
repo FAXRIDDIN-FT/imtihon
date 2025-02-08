@@ -1,5 +1,6 @@
 .hero {
     margin-top: 70px;
+    width: 100%;
 
 
 
@@ -59,6 +60,9 @@
 
     &__img {
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -94,26 +98,21 @@
 
 @media(max-width:800px) {
     .hero {
-
-
         &__text {
             padding: 100px 0;
             width: 100%;
-
             h1 {
                 font-size: 36px;
                 font-weight: 600;
                 line-height: 45px;
 
             }
-
             p {
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 24px;
              
             }
-
             button {
                 width: 236px;
                 height: 65px;
@@ -121,7 +120,6 @@
                 font-weight: 400;
             }
         }
-     
     }
 }
 @media(max-width:600px){
@@ -151,6 +149,18 @@
         }
         &__img{
             order: 1;
+        }
+    }
+}
+@media(max-width:450px){
+    .hero {
+        &__text{
+            button {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 36px;
+                margin-left: 18%;
+            }
         }
     }
 }
